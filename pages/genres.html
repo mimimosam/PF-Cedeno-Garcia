@@ -8,48 +8,70 @@
     <link rel="shortcut icon" href="../img/favicon.png">
     <link rel=”stylesheet” href=”https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css”>
 
-        <!--Boostrap-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!--Boostrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </head>
 
 <body class="body">
-        <!--Header con logo, menu-->
+        <!--Header-->
         <header class="header">
-            <div class="logo">
-                <a href="../index.html"> <img src="./img/logo3.png" alt="logo"> </a>
-            </div>
-            <nav>
-                <ul class="menu">
-                    <li><a href="../index.html">Home</li></a>
-                    <li><a href="./library.html">Library</li></a>
-                    <li><a href="./genres.html">Genres</li></a>
-                    <li><a href="./rankings.html">Ranking</li></a>
-                    <li><a href="./submissions.html">Submissions</li></a>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="../index.html"> <img src="../img/logo3.png" alt="logo"></a>
+            
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./library.html">Library</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./genres.html">Genres</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./rankings.html">Rankings</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./submissions.html">Submissions</a>
+                </li>
                 </ul>
-            </nav>
-        </header>
+            </div>
+            <form class="d-flex my-2 my-lg-0">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </nav>
+    </header>
 
-        <!--Slider con los generos-->
+        <!--Slider-->
         <main>
             <h1 class="titulo">Genres</h1>
             <div id="carouselExample" class="carousel slide">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <a href="#drama">
-                    <img src="../img/drama/drama.png" class="d-block w-100" alt="drama"> </a>
+                    <img src="../img/Drama/1.webp" class="d-block w-100" alt="drama"> </a>
                     </div>
                     <div class="carousel-item">
                         <a href="#comedy">
-                    <img src="../img/comedy.png" class="d-block w-100" alt="comedy"> </a>
+                    <img src="../img/Comedy/2.webp" class="d-block w-100" alt="comedy"> </a>
                     </div>
                     <div class="carousel-item">
                         <a href="#action">
-                    <img src="../img/action.png" class="d-block w-100" alt="action"> </a>
+                    <img src="../img/Action/5.webp" class="d-block w-100" alt="action"> </a>
                     </div>
                     <div class="carousel-item">
                         <a href="#romance">
-                    <img src="../img/romance.png" class="d-block w-100" alt="romance"></a>
+                    <img src="../img/Romance/3.webp" class="d-block w-100" alt="romance"></a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="#horror">
+                    <img src="../img/Horror/4.webp" class="d-block w-100" alt="horror"></a>
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
@@ -62,13 +84,25 @@
                 </button>
                 </div>
 
-            <section class="genres">
-                <h2 id="h2start">Drama</h2>
+            <section>
+                <h2 id="drama">Drama</h2>
                 <nav class="genreslist">
                     <ol class="genres">
                         <li>
-                            <img class="librarylist" src="../img/hug.jpg" alt="couple hugging"> 
-                            <p>Titulo del libro</p>
+                            <img class="librarylist" src="../img/Drama/bench.webp" alt="empty bench"> 
+                            <p>My last words to you</p>
+                        </li>
+                        <li>
+                            <img class="librarylist" src="../img/Drama/couple separated.webp" alt="couple upset"> 
+                            <p>High School Sweethearts</p>
+                        </li>
+                        <li>
+                            <img class="librarylist" src="../img/Drama/dancer.webp" alt="dancer"> 
+                            <p>My all</p>
+                        </li>
+                        <li>
+                            <img class="librarylist" src="../img/Drama/man in window.webp" alt="man in window"> 
+                            <p>Judgement</p>
                         </li>
                     </ol>
                 </nav>
@@ -76,8 +110,12 @@
                 <nav class="genreslist">
                     <ol class="genres">
                         <li>
-                            <img class="librarylist" src="./img/funny cat2.jpg" alt="comedy book cats">
-                            <p>Titulo del libro</p>
+                            <img class="librarylist" src="../img/Comedy/alpacas.webp" alt="comedy alpacas">
+                            <p>Huntings with Alpafriends</p>
+                        </li>
+                        <li>
+                            <img class="librarylist" src="../img/Comedy/girl-at-night.webp" alt="girl at night">
+                            <p>Where did I left my keys?</p>
                         </li>
                     </ol>
                 </nav>
@@ -85,8 +123,16 @@
                 <nav class="genreslist">
                     <ol class="genres">
                         <li>
-                            <img class="librarylist" src="./img/flowers girl.jpg" alt="smiling girl in flower prairie"> 
-                            <p>Titulo del libro2</p>
+                            <img class="librarylist" src="../img/Romance/beach.webp" alt="beach"> 
+                            <p>Starting anew</p>
+                        </li>
+                        <li>
+                            <img class="librarylist" src="../img/Romance/couple in lake.webp" alt="couple in lake"> 
+                            <p>Ourselves after pure joy</p>
+                        </li>
+                        <li>
+                            <img class="librarylist" src="../img/Romance/girl looking at flowers.webp" alt="girl looking at flowers"> 
+                            <p>Met through the flowers</p>
                         </li>
                     </ol>
                 </nav>
@@ -94,8 +140,41 @@
                 <nav class="genreslist">
                     <ol class="genres">
                         <li>
-                            <img class="librarylist" src="./img/stunt bike.jpg" alt="bike stunt">
-                            <p>Titulo del libro6</p>
+                            <img class="librarylist" src="../img/Action/guy-in-bike.webp" alt="bike stunt">
+                            <p>Heights and heists</p>
+                        </li>
+                        <li>
+                            <img class="librarylist" src="../img/Action/guy-laying.webp" alt="guy laying">
+                            <p>Simulated reality</p>
+                        </li>
+                        <li>
+                            <img class="librarylist" src="../img/Action/witchcraft-soft.webp" alt="witchcraft teen">
+                            <p>The Awakening</p>
+                        </li>
+                    </ol>
+                </nav>
+                <h2 id="horror">Horror</h2>
+                <nav class="genreslist">
+                    <ol class="genres">
+                        <li>
+                            <img class="librarylist" src="../img/Horror/double girl.webp" alt="double girl"> 
+                            <p>Parallel</p>
+                        </li>
+                        <li>
+                            <img class="librarylist" src="../img/Horror/girl in bathtub.webp" alt="girl in bathtub"> 
+                            <p>The call</p>
+                        </li>
+                        <li>
+                            <img class="librarylist" src="../img/Horror/girl in school.webp" alt="girl in school"> 
+                            <p>What remains</p>
+                        </li>
+                        <li>
+                            <img class="librarylist" src="../img/Horror/red gloves.webp" alt="woman with red gloves"> 
+                            <p>The Ruby Curse</p>
+                        </li>
+                        <li>
+                            <img class="librarylist" src="../img/Horror/train at night.webp" alt="train at night"> 
+                            <p>The cursed town</p>
                         </li>
                     </ol>
                 </nav>

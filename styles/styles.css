@@ -6,7 +6,7 @@
 }
 :root {
     --header-dark: #F4B183;
-    --yellow: #FFFFCC;
+    --peach: #FFD8C2;
     --cream: #FFF2CC;
     --light: #DFA67B;
     --burgundy: #581c1c;
@@ -31,23 +31,37 @@
     color: var(--hover)
 }
 
-.searchbar {
-    padding: 0px 35px;
+.d-flex input {
+    width: 200px;
+    box-sizing: border-box;
+    border: 2px var(--burgundy);
+    border-radius: 4px;
+    font-size: 15px;
+    height: 40px;
+    background-color: var(--peach);
+    background-image: url('../img/searchicon.svg');
+    background-position: 10px 10px; 
+    background-size: 25px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
 }
 
-.searchbar input {
-        width: 130px;
-        box-sizing: border-box;
-        border: 2px var(--burgundy);
-        border-radius: 4px;
-        font-size: 16px;
-        height: 40px;
-        background-color: var(--yellow);
-        background-image: url('searchicon.png');
-        background-position: 10px 10px; 
-        background-repeat: no-repeat;
-        padding: 12px 20px 12px 40px;
-        transition: width 0.4s ease-in-out;
+.d-flex button {
+    background-color: var(--burgundy);
+    color: var(--light);
+    border-color: var(--burgundy);
+    margin: 0px 30px 0px 0px;
+}
+
+.d-flex button:hover {
+    background-color: var(--light);
+    border-color: var(--burgundy);
+}
+
+.btn-outline-success:not(:disabled):not(.disabled):focus, 
+.btn-outline-success:not(:disabled):not(.disabled):active{
+    border-color: var(--burgundy);
+    background-color: var(--peach)
 }
 
 /*Home and General design*/
@@ -66,16 +80,19 @@
 }
 
 .banner img {
-    width: 70%;
+    width: 60em;
     padding: 20px;
     border-radius: 15%;
     display: flex;
     flex-direction: space-around;
 }
+
 .banner p {
     padding: 25px;
     font-style: italic;
-    align-items: baseline;
+    display: flex;
+    flex-direction: space-around;
+
 }
 
 .titulo {
@@ -103,7 +120,7 @@
     max-width: inherit;
     max-height: inherit;
     margin:0 auto;
-    object-position: 0% 70%;
+    object-position: 0% 40%;
 }
 
 /*Library Page*/
@@ -131,37 +148,40 @@
 
 /*Genres*/
 .genreslist {
-    display: grid;
-    grid-template-columns: 100%;
     gap: 15px;
-    place-items: start;
+    place-items: center;
     border-bottom: 1px solid #858d858f;
     margin: 25px;
 }
-.genres h2 {
+h2 {
     display: flex;
     justify-content: flex-start;
     padding: 25px;
 }
-#h2start {
-    margin-top: 5rem;
-}
+
 .genres {
     list-style-type: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
 }
+
 .genres li img {
     height: 400px;
     list-style-type: none;
-
 }
 
 .genres li p {
     text-align: center;
     font-size: 170%;
+
 }
 
 #carouselExample {
-    padding: 0px 40px;
+    padding: 0px 10em;
+}
+.carousel-control-prev, .carousel-control-next {
+    filter: invert(100%); 
 }
 
 /*Rankings*/
@@ -200,6 +220,7 @@
 .logo img {
     width: 150px;
 }
+
 .socials li {
     display: flex;
     padding: 10px;
@@ -272,7 +293,7 @@
 
 }
 
-@media (min-width: 600px) and (max-width: 990px){
+@media (min-width: 601px) and (max-width: 990px){
     .library-grid {
         grid-template-columns: repeat(2, 1fr);
     }

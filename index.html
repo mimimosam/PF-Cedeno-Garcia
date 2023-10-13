@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Windmi</title>
+
     <link rel="stylesheet" type="text/css" href="./styles/styles.css">
     <link rel="shortcut icon" href="./img/favicon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -11,28 +12,45 @@
     <!--Boostrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    
 
 </head>
 <body class="body">
-    <!--Header con logo y menu-->
+    <!--Header-->
     <header class="header">
-        <div class="logo">
-            <a href="../index.html"> <img src="./img/logo3.png" alt="logo"> </a>
-        </div>
-        <nav>
-            <ul class="menu">
-                <li><a href="../index.html">Home</li></a>
-                <li><a href="./pages/library.html">Library</li></a>
-                <li><a href="./pages/genres.html">Genres</li></a>
-                <li><a href="./pages/rankings.html">Ranking</li></a>
-                <li><a href="./pages/submissions.html">Submissions</li></a>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="../index.html"> <img src="../img/logo3.png" alt="logo"></a>
+            
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./pages/library.html">Library</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./pages/genres.html">Genres</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./pages/rankings.html">Rankings</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./pages/submissions.html">Submissions</a>
+                </li>
+                </ul>
+            </div>
+            <form class="d-flex my-2 my-lg-0">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
         </nav>
     </header>
 
     <main id="main">
-    <!--Banner con logo-->
+    <!--Banner-->
     <section class="banner">
         <img src="./img/logofondo.png" alt="banner">
         <p>Read stories made by indie creators. Add your own stories to the collection. Support upcomming artists.</p>
@@ -51,21 +69,21 @@
         </div>
         <div class="carousel-inner">
             <div class="carousel-item active">
-            <img src="./img/Comedy/alpacas.jpg" class="d-block w-100" alt="comedycat">
+            <img src="./img/Comedy/alpacas.webp" class="d-block w-100" alt="comedyalpaca">
             <div class="carousel-caption">
                 <h5>Huntings with Alpafriends</h5>
                 <p>Follow the life of Fred, an entusiasthic alpaca, as he travels the Alps to form his own friend group, The Alpafriends.</p>
             </div>
             </div>
             <div class="carousel-item">
-            <img src="./img/Romance/beach.jpg" class="d-block w-100" alt="smiling girl in flower prairie">
+            <img src="./img/Drama/man in window.webp" class="d-block w-100" alt="man in window">
             <div class="carousel-caption">
-                <h5>Starting anew</h5>
-                <p>Meeting on a crowded beach felt like a coincidence back in 2012, but it started to feel like destiny after meeting again on the same crowded beach 10 years later.</p>
+                <h5>Judgement</h5>
+                <p>Miguel's life is turned upside down when he is falsely accused of a crime he didn't commit.</p>
             </div>
             </div>
             <div class="carousel-item">
-            <img src="./img/Horror/double girl.jpg" class="d-block w-100" alt="man pleading">
+            <img src="./img/Horror/double girl.webp" class="d-block w-100" alt="man pleading">
             <div class="carousel-caption">
                 <h5>Parallel</h5>
                 <p>In this story, the reflections that we see of ourselves are actually us in a parallel universe — with a different consciousness they are planning to do whatever it takes to take our place and get rid of us.</p>

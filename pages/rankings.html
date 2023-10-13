@@ -7,22 +7,44 @@
     <link rel="stylesheet" type="text/css" href="../styles/styles.css">
     <link rel="shortcut icon" href="../img/favicon.png">
     <link rel=”stylesheet” href=”https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css”>
+
+    <!--Boostrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
 </head>
 
 <body class="body">
-    <!--Header con logo, menu-->
     <header class="header">
-        <div class="logo">
-            <a href="../index.html"> <img src="./img/logo3.png" alt="logo"> </a>
-        </div>
-        <nav>
-            <ul class="menu">
-                <li><a href="../index.html">Home</li></a>
-                <li><a href="./library.html">Library</li></a>
-                <li><a href="./genres.html">Genres</li></a>
-                <li><a href="./rankings.html">Ranking</li></a>
-                <li><a href="./submissions.html">Submissions</li></a>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="../index.html"> <img src="../img/logo3.png" alt="logo"></a>
+            
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./library.html">Library</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./genres.html">Genres</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./rankings.html">Rankings</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./submissions.html">Submissions</a>
+                </li>
+                </ul>
+            </div>
+            <form class="d-flex my-2 my-lg-0">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
         </nav>
     </header>
 
@@ -35,29 +57,30 @@
             <nav class="library">
                 <ol class="rankings">
                     <li>
-                        <img class="rankings" src="./img/funny cat2.jpg" alt="comedy book cats">
-                        <p class="titulos2">Titulo del libro1</p>
+                        <img class="rankings" src="../img/Comedy/alpacas.webp" alt="comedy alpaca">
+                        <h6>Huntings with Alpafriends</h6>
                     </li>
                     <li>
-                        <img class="rankings" src="./img/smile flowers.jpg" alt="smiling girl in flower prairie"> 
-                        <p class="titulos2">Titulo del libro2</p>
+                        <img class="rankings" src="../img/Action/witchcraft-soft.webp" alt="smiling girl in flower prairie"> 
+                        <h6>The Awakening</h6>
                     </li>
                     <li>
-                        <img class="rankings" src="./img/pleading man.jpg" alt="man pleading"> 
-                        <p class="titulos2">Titulo del libro3</p>
+                        <img class="rankings" src="../img/Action/guy-laying.webp" alt="man laying"> 
+                        <h6>Simulated reality</h6>
                     </li>
                     <li>
-                        <img class="rankings" src="./img/bus dark.jpg" alt="man on bus"> 
-                        <p class="titulos2">Titulo del libro4</p>
+                        <img class="rankings" src="../img/Horror/double girl.webp" alt="doubled girl"> 
+                        <h6>Parallel</h6>
                     </li>
                     <li>
-                        <img class="rankings" src="./img/holding hands.jpg" alt="holding hands"> 
-                        <p class="titulos2">Titulo del libro5</p>
+                        <img class="rankings" src="../img/Romance/girl looking at flowers.webp" alt="girl looking at flowers"> 
+                        <h6>Met through the flowers</h6>
+                    </li>
     </main>
 
     <footer class="footer">
         <div class="logo">
-            <img src="./img/logo3.png" alt="logo">
+            <img src="../img/logo3.png" alt="logo">
         </div>
         <div class="footer">
             <!--footer con links para socials y copyright-->

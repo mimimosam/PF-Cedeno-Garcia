@@ -15,19 +15,37 @@
 </head>
 
 <body class="body">
-    <!--Header con logo, menu-->
+    <!--Header-->
     <header class="header">
-        <div class="logo">
-            <a href="../index.html"><img src="../img/logo3.png" alt="logo"></a>
-        </div>
-        <nav>
-            <ul class="menu">
-                <li><a href="../index.html">Home</li></a>
-                <li><a href="./library.html">Library</li></a>
-                <li><a href="./genres.html">Genres</li></a>
-                <li><a href="./rankings.html">Ranking</li></a>
-                <li><a href="./submissions.html">Submissions</li></a>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="../index.html"> <img src="../img/logo3.png" alt="logo"></a>
+            
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./library.html">Library</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./genres.html">Genres</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./rankings.html">Rankings</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./submissions.html">Submissions</a>
+                </li>
+                </ul>
+            </div>
+            <form class="d-flex my-2 my-lg-0">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
         </nav>
     </header>
 
@@ -40,7 +58,7 @@
     
         <!--Submission form - Boostrap used-->
         <label for="inputPassword5" class="form-label">Name</label>
-        <input class="form-control" type="text" placeholder="Default input" aria-label="default input example">
+        <input class="form-control" type="text" placeholder="Name" aria-label="default input example">
 
         <div class="mb-3">
             <label for="exampleFormControlInput1" class="form-label">Email address</label>
@@ -57,14 +75,12 @@
     </div>
     </main>
 
-
     <!--Footer-->
     <footer class="footer">
         <div class="logo">
             <img src="../img/logo3.png" alt="logo">
         </div>
         <div class="footer">
-            <!--links para socials y copyright-->
             <ul class="socials">
                 <li><a href="https://www.twitter.com" target="_blank"> <img src="../img/square-x-twitter.svg" alt="twitter" class="twitter"></a></li>
                 <li><a href="https://www.facebook.com" target="_blank"> <img src="../img/square-facebook.svg" alt="facebook" class="facebook"></a></li>

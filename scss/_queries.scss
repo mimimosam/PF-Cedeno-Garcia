@@ -14,10 +14,12 @@
 
     .library-grid {
         grid-template-columns: repeat(1, 1fr);
+        padding-left: 0;
     }
 
     .rankings {
         grid-template-columns: repeat(1, 1fr);
+        padding-left: 0;
     }
 
     .genres li img {

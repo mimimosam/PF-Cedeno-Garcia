@@ -1,0 +1,48 @@
+
+/*Header*/
+.navbar {
+    background-color: $header-dark;
+}
+.nav-item a {
+    color: $burgundy;
+        &:hover {
+            color: $hover;
+        }
+}
+.navbar-brand img {
+    width: 150px;
+}
+
+.d-flex {
+    input {
+        width: 200px;
+        box-sizing: border-box;
+        border: 2px $burgundy;
+        border-radius: 4px;
+        font-size: 15px;
+        height: 40px;
+        background-color: $peach;
+        background-image: url('../img/searchicon.svg');
+        background-position: 10px 10px; 
+        background-size: 25px;
+        background-repeat: no-repeat;
+        padding: 12px 20px 12px 40px;
+    }
+    button {
+        background-color: $burgundy;
+        color: $light;
+        border-color: $burgundy;
+        margin: 0px 30px 0px 0px;
+        
+        &:hover {
+            background-color: $light;
+            border-color:$burgundy;
+        }
+    }
+}
+
+.btn-outline-success:not(:disabled):not(.disabled):focus, 
+.btn-outline-success:not(:disabled):not(.disabled):active{
+    border-color:$burgundy;
+    background-color: $peach;
+}

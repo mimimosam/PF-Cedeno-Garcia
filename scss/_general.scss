@@ -2,73 +2,13 @@
     padding: 0;
     margin: 0;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
-}
-
-:root {
-    --header-dark: #F4B183;
-    --peach: #FFD8C2;
-    --cream: #FFF2CC;
-    --light: #DFA67B;
-    --burgundy: #581c1c;
-    --hover: #8C8570;
-    --light-burgundy: #7a453f;
-
-}
-
-/*Header*/
-.navbar {
-    background-color: var(--header-dark);
-
-}
-.nav-item a {
-    color: var(--burgundy);
-
-        &:hover {
-            color: var(--hover)
-        }
-}
-.navbar-brand img {
-    width: 150px;
-}
-
-.d-flex {
-    input {
-        width: 200px;
-        box-sizing: border-box;
-        border: 2px var(--burgundy);
-        border-radius: 4px;
-        font-size: 15px;
-        height: 40px;
-        background-color: var(--peach);
-        background-image: url('../img/searchicon.svg');
-        background-position: 10px 10px; 
-        background-size: 25px;
-        background-repeat: no-repeat;
-        padding: 12px 20px 12px 40px;
-    }
-    button {
-        background-color: var(--burgundy);
-        color: var(--light);
-        border-color: var(--burgundy);
-        margin: 0px 30px 0px 0px;
-        
-        &:hover {
-            background-color: var(--light);
-            border-color: var(--burgundy);
-        }
-    }
-}
-
-.btn-outline-success:not(:disabled):not(.disabled):focus, 
-.btn-outline-success:not(:disabled):not(.disabled):active{
-    border-color: var(--burgundy);
-    background-color: var(--peach)
 }
 
 /*Home and General design*/
+@import 'variables';
+
 .body {
-    background-color: var(--cream);
+    background-color: $cream;
 }
 
 #main   {
@@ -78,14 +18,12 @@
 .banner {
     @include display-flex(flex,column);
     align-items: center;
-
     img {
         width: 60%;
         padding: 20px;
         border-radius: 15%;
         @include display-flex(flex, space-around);
     }
-
     p {
         padding: 25px;
         font-style: italic;
@@ -141,7 +79,6 @@
     height: 100%;
     }
 
-
 /*Genres*/
 .genreslist {
     gap: 15px;
@@ -172,7 +109,6 @@ h2 {
     }
 }
 
-
 #carouselExample {
     padding: 0px 10em;
 }
@@ -199,72 +135,4 @@ h2 {
 /*Submissions*/
 .form {
     padding: 5%;
-}
-
-/* Footer */
-.footer {
-    background-color: var(--light);
-    width: 100%;
-    @include display-flex(flex,space-around);
-    align-items: center;
-    padding-top: 15px;
-}
-
-.logo img {
-    width: 150px;
-}
-
-.socials li {
-    @include display-flex(flex,center);
-    padding: 10px;
-    text-decoration: none;
-    color: black;
-    float: left;
-    list-style-type: none;
-    flex-wrap: wrap;
-}
-
-.socials li img {
-    width: 35px;
-    @include display-flex(flex,space-around);
-}
-
-/*Responsive*/
-@media (min-width: 320px) and (max-width: 600px){
-    .header {
-        padding: 0px;
-        grid-template-columns: 1fr;
-    }
-    .logo {
-        width: auto;
-    }
-
-    .carousel .carousel-item {
-        height: 500px;
-    }
-
-    .library-grid .rankings {
-        grid-template-columns: repeat(1, 1fr);
-    }
-
-    .genres li img {
-        width: min(90%, 75rem);
-    }
-
-    #carouselExample {
-        height: inherit;
-        object-fit: cover;
-        vertical-align: center;
-        position: relative;
-        padding: 0 5em;
-        max-width: inherit;
-		max-height: inherit;
-    }
-
-}
-
-@media (min-width: 601px) and (max-width: 990px){
-    .library-grid .rankings {
-        grid-template-columns: repeat(2, 1fr);
-    }
 }

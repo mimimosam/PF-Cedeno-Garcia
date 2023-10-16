@@ -39,10 +39,7 @@
 }
 
 /*Carousel/Slider for HOME*/
-.carousel {
-  display: block;
-}
-.carousel .carousel-item {
+.carousel-item {
   height: 700px;
   margin: 0 auto;
   width: 100%;
@@ -219,6 +216,7 @@ h2 {
   flex-direction: space-around;
 }
 
+/*Media queries*/
 @media (min-width: 320px) and (max-width: 600px) {
   .header {
     padding: 0px;
@@ -227,10 +225,13 @@ h2 {
   .logo {
     width: auto;
   }
-  .carousel .carousel-item {
+  .carousel-item {
     height: 500px;
   }
-  .library-grid li .rankings li {
+  .library-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .rankings {
     grid-template-columns: repeat(1, 1fr);
   }
   .genres li img {
@@ -248,7 +249,10 @@ h2 {
   }
 }
 @media (min-width: 601px) and (max-width: 990px) {
-  .library-grid .rankings {
+  .library-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .rankings {
     grid-template-columns: repeat(2, 1fr);
   }
 }/*# sourceMappingURL=styles.css.map */

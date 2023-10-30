@@ -3,31 +3,34 @@
 body {
     overflow-x: hidden;
 }
-
 .header {
     padding: 0px;
     grid-template-columns: 1fr;
 }
 .logo {
-    width: auto;
+    width: 120px;
 }
-
+.navbar-toggler{
+    margin-left: 5%;
+}
+.d-flex {
+    margin-left: 5%;
+}
+#navbarTogglerDemo03 {
+    margin-left: 5%;
+}
 .carousel-item {
     height: 500px;
 }
-
 .library-grid {
     grid-template-columns: repeat(1, 1fr);
 }
-
 .rankings {
     grid-template-columns: repeat(1, 1fr);
 }
-
 .genres li img {
     width: min(90%, 75rem);
 }
-
 #carouselExample {
     height: inherit;
     object-fit: cover;
@@ -37,14 +40,71 @@ body {
     max-width: inherit;
 	max-height: inherit;
 }
+#GenresCarousel {
+    height: 300px;
+    .d-block a img {
+        height: fit-content;
+        width: 100%;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+}
+
+.footer {
+    padding-bottom: 1rem;
+}
+.links ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+.socials a img {
+    width: 25px;
+}
+.copyright p {
+    font-size: 12px;
+    margin-bottom: 0px;
+}
+.logo img {
+    width: 120px;
+    padding-left: 0px;
+}
 }
 
 @media (min-width: 601px) and (max-width: 990px){
+.navbar-toggler{
+    margin-left: 5%;
+}
+.d-flex {
+    margin-left: 5%;
+    margin-top: 5%;
+}
+#navbarTogglerDemo03 {
+    margin-left: 5%;
+}
 .library-grid {
     grid-template-columns: repeat(2, 1fr);
 }
-
+#GenresCarousel {
+    height: 500px;
+    .d-block a img {
+        object-fit: contain;
+        height: inherit;
+        width: 100%;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
 .rankings {
     grid-template-columns: repeat(2, 1fr);
+}
+.links ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.copyright {
+    font-size: 16px;
 }
 }

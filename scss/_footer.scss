@@ -1,27 +1,40 @@
 /* Footer */
 .footer {
-    background-color: $light;
+    background-color: $header-dark;
+    display: grid;
     width: 100%;
-    @include display-flex(flex,space-around);
-    align-items: center;
-    padding-top: 15px;
+    grid-template-columns: 1fr 1fr 3fr;
+    padding: 10px;
+    gap: 2%;
 }
+.socials ul {
+    align-items: center;
+    width: 100%;
+}
+.socialslist {
+    @include display-flex(flex,space-between);
+    padding: 5%;
+    flex-direction: row;
+    
 
+}
 .logo img {
     width: 150px;
 }
-
+.copyright {
+    @include display-flex(flex,space-around);
+    flex-wrap: wrap;
+    padding-left: 10%;
+}
 .socials li {
-    @include display-flex(flex,center);
-    padding: 10px;
+    @include display-flex(flex,space-between);
+    padding: 5%;
     text-decoration: none;
-    color: black;
-    float: left;
     list-style-type: none;
     flex-wrap: wrap;
-}
-
-.socials li img {
+    img {
     width: 35px;
     @include display-flex(flex,space-around);
+    }
+
 }

@@ -6,18 +6,17 @@
     <meta name="keywords" content="indie books, comedy, romance, action, horror, genres, book genres">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Windmi</title>
-    <link rel="stylesheet" type="text/css" href="../scss/styles.css">
     <link rel="shortcut icon" href="../img/favicon.png">
     <link rel=”stylesheet” href=”https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css”>
-
     <!--jQuery-->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.6/dist/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-
     <!--Boostrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!--Css-->
+    <link rel="stylesheet" type="text/css" href="../scss/styles.css">
 </head>
 
 <body class="body">
@@ -28,7 +27,6 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <a class="navbar-brand" href="../index.html"> <img src="../img/logo3.png" alt="logo"></a>
-            
             <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
                 <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                 <li class="nav-item">
@@ -55,37 +53,46 @@
         </nav>
     </header>
 
-        <!--Slider-->
         <main>
             <h1 class="titulo">Genres</h1>
-            <div id="carouselExample" class="carousel slide">
+            <div id="carouselExampleGenres" class="carousel slide" data-bs-touch="false">
                 <div class="carousel-inner">
-                    <div class="carousel-item active">
+                    <div id="GenresCarousel" class="carousel-item active " >
+                        <div class="d-block justify-content-center">
                         <a href="#drama">
-                    <img src="../img/Drama/1.webp" class="d-block w-100" alt="drama"> </a>
+                    <img src="../img/drama/1.webp" class="d-block justify-content-center" alt="drama"> </a>
+                        </div>
                     </div>
-                    <div class="carousel-item">
+                    <div id="GenresCarousel" class="carousel-item" >
+                        <div class="d-block justify-content-center">
                         <a href="#comedy">
-                    <img src="../img/Comedy/2.webp" class="d-block w-100" alt="comedy"> </a>
+                        <img src="../img/comedy/2.webp" class="d-block justify-content-center" alt="comedy"> </a>
+                        </div>
                     </div>
-                    <div class="carousel-item">
+                    <div id="GenresCarousel" class="carousel-item" >
+                        <div class="d-block justify-content-center">
                         <a href="#action">
-                    <img src="../img/Action/5.webp" class="d-block w-100" alt="action"> </a>
+                        <img src="../img/action/5.webp" class="d-block justify-content-center"" alt="action"> </a>
+                        </div>
                     </div>
-                    <div class="carousel-item">
+                    <div id="GenresCarousel" class="carousel-item" >
+                        <div class="d-block justify-content-center">
                         <a href="#romance">
-                    <img src="../img/Romance/3.webp" class="d-block w-100" alt="romance"></a>
+                        <img src="../img/romance/3.webp" class=" d-block justify-content-center"" alt="romance"></a>
+                        </div>
                     </div>
-                    <div class="carousel-item">
+                    <div id="GenresCarousel" class="carousel-item " >
+                        <div class="d-block justify-content-center">
                         <a href="#horror">
-                    <img src="../img/Horror/4.webp" class="d-block w-100" alt="horror"></a>
+                        <img src="../img/horror/4.webp" class="d-block justify-content-center"" alt="horror"></a>
+                        </div>
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleGenres" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleGenres" data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                 </button>
@@ -96,19 +103,19 @@
                 <nav class="genreslist">
                     <ol class="genres">
                         <li>
-                            <img class="librarylist" src="../img/Drama/bench.webp" alt="empty bench"> 
+                            <img class="librarylist" src="../img/drama/bench.webp" alt="empty bench"> 
                             <p>My last words to you</p>
                         </li>
                         <li>
-                            <img class="librarylist" src="../img/Drama/couple separated.webp" alt="couple upset"> 
+                            <img class="librarylist" src="../img/drama/couple-separated.webp" alt="couple upset"> 
                             <p>High School Sweethearts</p>
                         </li>
                         <li>
-                            <img class="librarylist" src="../img/Drama/dancer.webp" alt="dancer"> 
+                            <img class="librarylist" src="../img/drama/dancer.webp" alt="dancer"> 
                             <p>My all</p>
                         </li>
                         <li>
-                            <img class="librarylist" src="../img/Drama/man in window.webp" alt="man in window"> 
+                            <img class="librarylist" src="../img/drama/man-in-window.webp" alt="man in window"> 
                             <p>Judgement</p>
                         </li>
                     </ol>
@@ -117,11 +124,11 @@
                 <nav class="genreslist">
                     <ol class="genres">
                         <li>
-                            <img class="librarylist" src="../img/Comedy/alpacas.webp" alt="comedy alpacas">
+                            <img class="librarylist" src="../img/comedy/alpacas.webp" alt="comedy alpacas">
                             <p>Huntings with Alpafriends</p>
                         </li>
                         <li>
-                            <img class="librarylist" src="../img/Comedy/girl-at-night.webp" alt="girl at night">
+                            <img class="librarylist" src="../img/comedy/girl-at-night.webp" alt="girl at night">
                             <p>Where did I left my keys?</p>
                         </li>
                     </ol>
@@ -130,15 +137,15 @@
                 <nav class="genreslist">
                     <ol class="genres">
                         <li>
-                            <img class="librarylist" src="../img/Romance/beach.webp" alt="beach"> 
+                            <img class="librarylist" src="../img/romance/beach.webp" alt="beach"> 
                             <p>Starting anew</p>
                         </li>
                         <li>
-                            <img class="librarylist" src="../img/Romance/couple in lake.webp" alt="couple in lake"> 
+                            <img class="librarylist" src="../img/romance/couple-in-lake.webp" alt="couple in lake"> 
                             <p>Ourselves after pure joy</p>
                         </li>
                         <li>
-                            <img class="librarylist" src="../img/Romance/girl looking at flowers.webp" alt="girl looking at flowers"> 
+                            <img class="librarylist" src="../img/romance/girl-looking-at-flowers.webp" alt="girl looking at flowers"> 
                             <p>Met through the flowers</p>
                         </li>
                     </ol>
@@ -147,15 +154,15 @@
                 <nav class="genreslist">
                     <ol class="genres">
                         <li>
-                            <img class="librarylist" src="../img/Action/guy-in-bike.webp" alt="bike stunt">
+                            <img class="librarylist" src="../img/action/guy-in-bike.webp" alt="bike stunt">
                             <p>Heights and heists</p>
                         </li>
                         <li>
-                            <img class="librarylist" src="../img/Action/guy-laying.webp" alt="guy laying">
+                            <img class="librarylist" src="../img/action/guy-laying.webp" alt="guy laying">
                             <p>Simulated reality</p>
                         </li>
                         <li>
-                            <img class="librarylist" src="../img/Action/witchcraft-soft.webp" alt="witchcraft teen">
+                            <img class="librarylist" src="../img/action/witchcraft-soft.webp" alt="witchcraft teen">
                             <p>The Awakening</p>
                         </li>
                     </ol>
@@ -164,49 +171,45 @@
                 <nav class="genreslist">
                     <ol class="genres">
                         <li>
-                            <img class="librarylist" src="../img/Horror/double girl.webp" alt="double girl"> 
+                            <img class="librarylist" src="../img/horror/double-girl.webp" alt="double girl"> 
                             <p>Parallel</p>
                         </li>
                         <li>
-                            <img class="librarylist" src="../img/Horror/girl in bathtub.webp" alt="girl in bathtub"> 
+                            <img class="librarylist" src="../img/horror/girl-in-bathtub.webp" alt="girl in bathtub"> 
                             <p>The call</p>
                         </li>
                         <li>
-                            <img class="librarylist" src="../img/Horror/girl in school.webp" alt="girl in school"> 
+                            <img class="librarylist" src="../img/horror/girl-in-school.webp" alt="girl in school"> 
                             <p>What remains</p>
                         </li>
                         <li>
-                            <img class="librarylist" src="../img/Horror/red gloves.webp" alt="woman with red gloves"> 
+                            <img class="librarylist" src="../img/horror/red-gloves.webp" alt="woman with red gloves"> 
                             <p>The Ruby Curse</p>
                         </li>
                         <li>
-                            <img class="librarylist" src="../img/Horror/train at night.webp" alt="train at night"> 
+                            <img class="librarylist" src="../img/horror/train-at-night.webp" alt="train at night"> 
                             <p>The cursed town</p>
                         </li>
                     </ol>
                 </nav>
             </section>
-
         </main>
-
-        
+<!--footer-->
 <footer class="footer">
     <div class="logo">
         <img src="../img/logo3.png" alt="logo">
     </div>
-    <div class="footer">
-        <!--footer con links para socials y copyright-->
+    <div class="socialslist">
         <ul class="socials">
             <li><a href="https://www.twitter.com" target="_blank"> <img src="../img/square-x-twitter.svg" alt="twitter" class="twitter"></a></li>
             <li><a href="https://www.facebook.com" target="_blank"> <img src="../img/square-facebook.svg" alt="facebook" class="facebook"></a></li>
             <li><a href="https://www.instagram.com" target="_blank"> <img src="../img/instagram.svg" alt="instagram" class="instagram"></a></li>
         </ul>
     </div>
-    <div>
+    <div class="copyright">
     <p>Copyright
     © 2023 Samantha Cedeño. Projecto Windmi. All rights reserved.</p>
     <a href="#top"><p>Go to Top</p></a>
     </div>
-
 </footer>
 </html>

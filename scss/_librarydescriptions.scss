@@ -1,0 +1,27 @@
+.hoverdescription {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    text-align: center;
+    object-fit: contain;
+    overflow: hidden;
+    width: 50%;
+    transform: translate(32.33%, -10%);
+
+    .genero, 
+    .sinopsis {
+        background-color: $peach;
+        color: $burgundy;
+        font-size: 16px;
+        padding: 16px 32px;
+        object-fit: contain;
+        opacity: 1;
+        overflow: hidden;
+        width: 35%;
+        text-align: center;
+}
+}
+.containerlibrary:hover .hoverdescription  {
+    opacity: 0.8;
+
+}

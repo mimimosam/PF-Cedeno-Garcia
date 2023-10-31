@@ -213,10 +213,10 @@ h2 {
 .footerlinks ul {
   display: flex;
   flex-direction: space-between;
-  padding: 5%;
+  padding-left: 15%;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 20px;
 }
 
 .logo img {
@@ -353,4 +353,32 @@ h2 {
   .copyright {
     font-size: 16px;
   }
+}
+.hoverdescription {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  text-align: center;
+  -o-object-fit: contain;
+     object-fit: contain;
+  overflow: hidden;
+  width: 50%;
+  transform: translate(32.33%, -10%);
+}
+.hoverdescription .genero,
+.hoverdescription .sinopsis {
+  background-color: #FFD8C2;
+  color: #581c1c;
+  font-size: 16px;
+  padding: 16px 32px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  opacity: 1;
+  overflow: hidden;
+  width: 35%;
+  text-align: center;
+}
+
+.containerlibrary:hover .hoverdescription {
+  opacity: 0.8;
 }/*# sourceMappingURL=styles.css.map */

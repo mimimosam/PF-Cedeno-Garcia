@@ -210,16 +210,13 @@ h2 {
   gap: 2%;
 }
 
-.socials ul {
-  align-items: center;
-  width: 100%;
-}
-
-.socialslist {
+.footerlinks ul {
   display: flex;
   flex-direction: space-between;
   padding: 5%;
   flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 .logo img {
@@ -234,12 +231,8 @@ h2 {
 }
 
 .socials li {
-  display: flex;
-  flex-direction: space-between;
-  padding: 5%;
   text-decoration: none;
   list-style-type: none;
-  flex-wrap: wrap;
 }
 .socials li img {
   width: 35px;
@@ -353,6 +346,9 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  .socials a img {
+    width: 25px;
   }
   .copyright {
     font-size: 16px;

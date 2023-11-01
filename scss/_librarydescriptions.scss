@@ -7,7 +7,6 @@
     overflow: hidden;
     width: 50%;
     transform: translate(32.33%, -10%);
-
     .genero, 
     .sinopsis {
         background-color: $peach;
@@ -19,7 +18,7 @@
         overflow: hidden;
         width: 35%;
         text-align: center;
-}
+    }
 }
 .containerlibrary:hover .hoverdescription  {
     opacity: 0.8;

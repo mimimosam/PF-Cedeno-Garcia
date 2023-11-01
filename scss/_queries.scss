@@ -22,8 +22,20 @@ body {
 .carousel-item {
     height: 500px;
 }
+ol , ul {
+    padding: 0;
+}
 .library-grid {
     grid-template-columns: repeat(1, 1fr);
+}
+div .hoverdescription {
+    width: 80%;
+    transform: translate(10%, -10%);
+    .genero, 
+    .sinopsis {
+        font-size: 12px;
+        width: 80%;
+    }
 }
 .rankings {
     grid-template-columns: repeat(1, 1fr);
@@ -85,6 +97,18 @@ body {
 }
 .library-grid {
     grid-template-columns: repeat(2, 1fr);
+}
+ol, ul {
+    padding: 0;
+}
+div .hoverdescription {
+    width: 50%;
+    transform: translate(0.33%, -20%);
+    .genero, 
+    .sinopsis {
+        font-size: 14px;
+        width: 100%;
+    }
 }
 #GenresCarousel {
     height: 500px;

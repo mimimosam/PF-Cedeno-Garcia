@@ -280,7 +280,7 @@ h2 {
   }
   div .hoverdescription {
     width: 80%;
-    transform: translate(20%, 20%);
+    transform: translate(15%, 20%);
   }
   div .hoverdescription .genero,
   div .hoverdescription .sinopsis {
@@ -295,8 +295,6 @@ h2 {
   }
   #carouselExample {
     height: inherit;
-    -o-object-fit: cover;
-       object-fit: cover;
     vertical-align: center;
     position: relative;
     padding: 0 5em;
@@ -309,8 +307,6 @@ h2 {
   #GenresCarousel .d-block a img {
     height: 300px;
     width: 100%;
-    padding-left: 25px;
-    padding-right: 25px;
   }
   .footer {
     padding-bottom: 1rem;

@@ -24,8 +24,7 @@ body {
     }
 
 .carousel-item {
-    height: 500px;
-    position: relative;
+    height: auto;
 }
 ol , ul {
     padding: 0;
@@ -59,12 +58,11 @@ div .hoverdescription {
     max-width: inherit;
 }
 #GenresCarousel {
-    height: 300px;
+    height: auto;
     .d-block a img {
-        max-width: 100%;
-        margin: inherit;
+        max-width: 80%;
+        object-fit: cover;
         float: none;
-        margin: 20px;
     }
 }
 
@@ -122,8 +120,8 @@ div .hoverdescription {
         object-fit: contain;
         height: inherit;
         width: 90%;
-        padding-left: 40px;
-        padding-right: 40px;
+        margin-left: 40px;
+        margin-right: 40px;
     }
 }
 .rankings {

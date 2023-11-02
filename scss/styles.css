@@ -266,8 +266,7 @@ h2 {
     padding: 0px;
   }
   .carousel-item {
-    height: 500px;
-    position: relative;
+    height: auto;
   }
   ol, ul {
     padding: 0;
@@ -301,13 +300,13 @@ h2 {
     max-width: inherit;
   }
   #GenresCarousel {
-    height: 300px;
+    height: auto;
   }
   #GenresCarousel .d-block a img {
-    max-width: 100%;
-    margin: inherit;
+    max-width: 80%;
+    -o-object-fit: cover;
+       object-fit: cover;
     float: none;
-    margin: 20px;
   }
   .footer {
     padding-bottom: 1rem;
@@ -364,8 +363,8 @@ h2 {
        object-fit: contain;
     height: inherit;
     width: 90%;
-    padding-left: 40px;
-    padding-right: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
   }
   .rankings {
     grid-template-columns: repeat(2, 1fr);

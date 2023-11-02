@@ -275,6 +275,9 @@ h2 {
   .library-grid {
     grid-template-columns: repeat(1, 1fr);
   }
+  .containerlibrary .librarylist {
+    position: relative;
+  }
   div .hoverdescription {
     width: 80%;
     transform: translate(20%, 20%);
@@ -304,9 +307,8 @@ h2 {
     height: 300px;
   }
   #GenresCarousel .d-block a img {
-    height: -moz-fit-content;
-    height: fit-content;
-    width: 50%;
+    height: 300px;
+    width: 100%;
     padding-left: 25px;
     padding-right: 25px;
   }

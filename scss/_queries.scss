@@ -33,6 +33,9 @@ ol , ul {
 .library-grid {
     grid-template-columns: repeat(1, 1fr);
 }
+.containerlibrary .librarylist {
+    position: relative;
+}
 div .hoverdescription {
     width: 80%;
     transform: translate(20%, 20%);
@@ -60,8 +63,8 @@ div .hoverdescription {
 #GenresCarousel {
     height: 300px;
     .d-block a img {
-        height: fit-content;
-        width: 50%;
+        height: 300px;
+        width: 100%;
         padding-left: 25px;
         padding-right: 25px;
     }

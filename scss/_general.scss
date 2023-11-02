@@ -19,7 +19,7 @@
     @include display-flex(flex,column);
     align-items: center;
     img {
-        width: 60%;
+        width: 80%;
         padding: 20px;
         border-radius: 15%;
         @include display-flex(flex, space-around);
@@ -27,7 +27,8 @@
     p {
         padding: 25px;
         font-style: italic;
-        @include display-flex(flex,space-around);
+        font-size: 18px;
+        @include display-flex(flex,center);
     }
 }
 

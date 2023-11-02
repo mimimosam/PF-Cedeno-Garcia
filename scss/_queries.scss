@@ -25,13 +25,12 @@ body {
 
 .carousel-item {
     height: auto;
-    transform: translateZ(0);
-    -webkit-transform: translateZ(0); 
-    -moz-transform: translateZ(0); 
+    overflow: hidden;
+    transition: height .35s linear , width .35 linear;
 }
 .carousel-item.active {
     display: block;
-    overflow:hidden;
+    overflow: hidden;
 }
 ol , ul {
     padding: 0;

@@ -267,9 +267,8 @@ h2 {
   }
   .carousel-item {
     height: auto;
-    transform: translateZ(0);
-    -webkit-transform: translateZ(0);
-    -moz-transform: translateZ(0);
+    overflow: hidden;
+    transition: height 0.35s linear, width 0.35 linear;
   }
   .carousel-item.active {
     display: block;

@@ -304,9 +304,10 @@ h2 {
     height: 300px;
   }
   #GenresCarousel .d-block a img {
-    min-height: 300px;
     max-width: 100%;
-    margin: 0px 40px 10px 10px;
+    margin: inherit;
+    float: none;
+    margin: 20px;
   }
   .footer {
     padding-bottom: 1rem;
@@ -362,7 +363,7 @@ h2 {
     -o-object-fit: contain;
        object-fit: contain;
     height: inherit;
-    width: 100%;
+    width: 90%;
     padding-left: 40px;
     padding-right: 40px;
   }

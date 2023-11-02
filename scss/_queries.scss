@@ -61,9 +61,10 @@ div .hoverdescription {
 #GenresCarousel {
     height: 300px;
     .d-block a img {
-        min-height: 300px;
         max-width: 100%;
-        margin: 0px 40px 10px 10px;
+        margin: inherit;
+        float: none;
+        margin: 20px;
     }
 }
 
@@ -120,7 +121,7 @@ div .hoverdescription {
     .d-block a img {
         object-fit: contain;
         height: inherit;
-        width: 100%;
+        width: 90%;
         padding-left: 40px;
         padding-right: 40px;
     }

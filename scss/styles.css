@@ -268,11 +268,12 @@ h2 {
   .carousel-item {
     height: auto;
     overflow: hidden;
-    transition: height 0.35s linear, width 0.35 linear;
+    transition: none;
   }
   .carousel-item.active {
     display: block;
     overflow: hidden;
+    transition: none;
   }
   ol, ul {
     padding: 0;
@@ -304,9 +305,8 @@ h2 {
     position: relative;
     padding: 0 5em;
     max-width: inherit;
-    transform: translateZ(0);
-    -webkit-transform: translateZ(0);
-    -moz-transform: translateZ(0);
+    transition: none;
+    transition: 0;
   }
   #GenresCarousel {
     height: auto;
@@ -316,6 +316,7 @@ h2 {
     -o-object-fit: cover;
        object-fit: cover;
     float: none;
+    transition: 0;
   }
   .footer {
     padding-bottom: 1rem;

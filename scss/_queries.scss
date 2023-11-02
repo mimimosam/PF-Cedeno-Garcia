@@ -25,6 +25,13 @@ body {
 
 .carousel-item {
     height: auto;
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0); 
+    -moz-transform: translateZ(0); 
+}
+.carousel-item.active {
+    display: block;
+    overflow:hidden;
 }
 ol , ul {
     padding: 0;
@@ -56,6 +63,9 @@ div .hoverdescription {
     position: relative;
     padding: 0 5em;
     max-width: inherit;
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0); 
+    -moz-transform: translateZ(0); 
 }
 #GenresCarousel {
     height: auto;
